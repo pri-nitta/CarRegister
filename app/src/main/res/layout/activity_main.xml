@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@color/colorLightPurple">
+
+    <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:textColor="@color/fontDarkColor"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintVertical_bias="0.094"/>
+
+    <TextView
+            android:id="@+id/txtResume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resume"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="@color/fontDarkColor"
+            android:textSize="18sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName"
+            app:layout_constraintVertical_bias="0.037"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDarkPurple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toBottomOf="@+id/txtResume">
+
+        <EditText
+                android:id="@+id/edtModel"
+                android:hint="@string/edtModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+        />
+
+        <EditText
+                android:id="@+id/edtPlate"
+                android:hint="@string/edtPlate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+        />
+
+        <EditText
+                android:id="@+id/edtColor"
+                android:hint="@string/edtColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+        />
+
+        <EditText
+                android:id="@+id/edtBrand"
+                android:hint="@string/edtBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+        />
+
+        <EditText
+                android:id="@+id/edtYear"
+                android:hint="@string/edtYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+        />
+
+        <EditText
+                android:id="@+id/edtPotency"
+                android:hint="@string/edtPotency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+        />
+
+        <Button
+                android:id="@+id/btnCadastrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorDarkGreen"
+                android:text="@string/btnCadastrar"
+                android:textColor="@color/fontLightColor"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_margin="24dp"
+        />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

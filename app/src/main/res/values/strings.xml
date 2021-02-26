@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Cadastro de Carros da Pri</string>
+    <string name="resume">Digite as informações do carro que deseja cadastrar:</string>
+    <string name="edtModel">Modelo</string>
+    <string name="edtPlate">Placa</string>
+    <string name="edtColor">Cor</string>
+    <string name="edtYear">Ano</string>
+    <string name="edtBrand">Marca</string>
+    <string name="edtPotency">Potência do Motor</string>
+    <string name="btnCadastrar">Cadastre!</string>
+    <string name="title_activity_information2">Information2</string>
+</resources>
